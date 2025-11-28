@@ -8,27 +8,27 @@
       "privateTxUrl": ""
     },
     {
-      "name": "validator1",
+      "name": "sbv",
       "client": "besu",
-      "rpcUrl": "http://validator1:8545",
+      "rpcUrl": "http://sbv:8545",
       "privateTxUrl": ""
     },
     {
-      "name": "validator2",
+      "name": "vietcombank",
       "client": "besu",
-      "rpcUrl": "http://validator2:8545",
+      "rpcUrl": "http://vietcombank:8545",
       "privateTxUrl": ""
     },
     {
-      "name": "validator3",
+      "name": "vietinbank",
       "client": "besu",
-      "rpcUrl": "http://validator3:8545",
+      "rpcUrl": "http://vietinbank:8545",
       "privateTxUrl": ""
     },
     {
-      "name": "validator4",
+      "name": "bidv",
       "client": "besu",
-      "rpcUrl": "http://validator4:8545",
+      "rpcUrl": "http://bidv:8545",
       "privateTxUrl": ""
     },
     {

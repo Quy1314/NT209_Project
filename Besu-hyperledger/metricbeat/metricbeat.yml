@@ -3,10 +3,10 @@ metricbeat.modules:
 - module: prometheus
   period: 15s
   hosts:
-  - validator1:9545
-  - validator2:9545
-  - validator3:9545
-  - validator4:9545
+  - sbv:9545
+  - vietcombank:9545
+  - vietinbank:9545
+  - bidv:9545
   - rpcnode:9545
   - member1besu:9545
   - member2besu:9545

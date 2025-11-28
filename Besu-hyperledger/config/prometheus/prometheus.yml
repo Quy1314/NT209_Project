@@ -19,37 +19,37 @@ rule_files:
 # A scrape configuration containing exactly one endpoint to scrape:
 # Here it's Prometheus itself.
 scrape_configs:
-    - job_name: validator1
+    - job_name: sbv
       scrape_interval: 15s
       scrape_timeout: 10s
       metrics_path: /metrics
       scheme: http
       static_configs:
-        - targets: [ validator1:9545 ]
+        - targets: [ sbv:9545 ]
 
-    - job_name: validator2
+    - job_name: vietcombank
       scrape_interval: 15s
       scrape_timeout: 10s
       metrics_path: /metrics
       scheme: http
       static_configs:
-        - targets: [ validator2:9545 ]
+        - targets: [ vietcombank:9545 ]
 
-    - job_name: validator3
+    - job_name: vietinbank
       scrape_interval: 15s
       scrape_timeout: 10s
       metrics_path: /metrics
       scheme: http
       static_configs:
-        - targets: [ validator3:9545 ]
+        - targets: [ vietinbank:9545 ]
 
-    - job_name: validator4
+    - job_name: bidv
       scrape_interval: 15s
       scrape_timeout: 10s
       metrics_path: /metrics
       scheme: http
       static_configs:
-        - targets: [ validator4:9545 ]
+        - targets: [ bidv:9545 ]
 
     - job_name: rpcnode
       scrape_interval: 15s

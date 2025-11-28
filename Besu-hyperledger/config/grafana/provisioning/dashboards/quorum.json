@@ -2081,7 +2081,7 @@
         "hide": 2,
         "label": "job",
         "name": "job",
-        "query": "validator*",
+        "query": "sbv|vietcombank|vietinbank|bidv",
         "skipUrlSync": false,
         "type": "constant"
       },

@@ -60,6 +60,21 @@ The overall architecture diagrams to visually show components of the blockchain 
 
 ![Image blockchain](./static/blockchain-network.png)
 
+## Bank test users
+
+To simplify end-to-end money-transfer testing before PQC/ZKP integration, every commercial bank validator now ships with two prefunded user accounts.  All keystores live under `config/nodes/<bank>_userX/` and use the password format `<Bank>:User:<id>` shown below.
+
+| Bank | User | Address | Private key | Keystore path | Password |
+| --- | --- | --- | --- | --- | --- |
+| Vietcombank | `vietcombank_user1` | `0x422b10ce2c930d45814992742e36383684946b14` | `0x67e14b41e88fa8dd79cbd302134c17c2ff611248ed88efae528d6db8a1386596` | `config/nodes/vietcombank_user1/accountKeystore` | `Vietcombank:User:1` |
+| Vietcombank | `vietcombank_user2` | `0xe8023765dbfad4f5b39e4d958e7f77c841c92070` | `0x57acc05c004fe40f4cb76207542bfefaa8804df2896645634c7f44ae51932f5f` | `config/nodes/vietcombank_user2/accountKeystore` | `Vietcombank:User:2` |
+| VietinBank | `vietinbank_user1` | `0xf9a6995806e630b216f65ba5577088c9032a8051` | `0xac07a9f152fe78a5ad89946a4794260818b05c7898b669666c0369304b5d4ab0` | `config/nodes/vietinbank_user1/accountKeystore` | `VietinBank:User:1` |
+| VietinBank | `vietinbank_user2` | `0xffe77b3af2e19001b08c1a5b2d6f81af8b3081fd` | `0x5758fa2ccfc934d34a52728d9d968d93405eee22dd92328b31e8e9dca27251e3` | `config/nodes/vietinbank_user2/accountKeystore` | `VietinBank:User:2` |
+| BIDV | `bidv_user1` | `0x9ce2b1c73dfe760d7413f5034709133d14bde60a` | `0x7581b1943d30d3354c5b63e4aed6759aa61430fae5ca965a7e3ec5c18597e3a1` | `config/nodes/bidv_user1/accountKeystore` | `BIDV:User:1` |
+| BIDV | `bidv_user2` | `0xfe4c08e2839b216d82635d9b4e5bb14d0b7cbd33` | `0x5d88bec4d4783e2038f452ff6b371ab30774941503be01ea9c6296a7d8638d01` | `config/nodes/bidv_user2/accountKeystore` | `BIDV:User:2` |
+
+Use these EOAs to simulate customer deposits, transfers, and withdrawals against your smart contracts or CLI tools.  They appear in the genesis allocation with 100,000 test ETH each so you can exercise value flows immediately after `./run.sh`.
+
 ### i. POA Network <a name="poa-network"></a>
 
 This is the simplest of the networks available and will spin up a blockchain network comprising 4 validators, 1 RPC

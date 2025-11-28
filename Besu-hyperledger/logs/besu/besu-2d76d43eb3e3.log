@@ -1,0 +1,75 @@
+{"timestamp":"2025-11-28T09:26:45,116","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"Besu","message":"Starting Besu","throwable":""}
+{"timestamp":"2025-11-28T09:26:45,901","container":"2d76d43eb3e3","level":"WARN","thread":"main","class":"Besu","message":"--min-gas-price has been ignored because --miner-enabled was not defined on the command line.","throwable":""}
+{"timestamp":"2025-11-28T09:26:47,226","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"Besu","message":"
+####################################################################################################
+#                                                                                                  #
+# Besu version 23.4.1                                                                              #
+#                                                                                                  #
+# Configuration:                                                                                   #
+# Network: Custom genesis file specified                                                           #
+# Network Id: 1337                                                                                 #
+# Data storage: Forest                                                                             #
+# Sync mode: Full                                                                                  #
+# RPC HTTP APIs: EEA,WEB3,ETH,NET,TRACE,DEBUG,ADMIN,TXPOOL,PRIV,PERM,QBFT                          #
+# RPC HTTP port: 8545                                                                              #
+#                                                                                                  #
+# Host:                                                                                            #
+# Java: openjdk-java-17                                                                            #
+# Maximum heap size: 3.81 GB                                                                       #
+# OS: linux-x86_64                                                                                 #
+# glibc: 2.35                                                                                      #
+# jemalloc: 5.2.1-0-gea6b3e973b477b8061e0076bb257dbd7f3faa756                                      #
+# Total memory: 15.25 GB                                                                           #
+# CPU cores: 16                                                                                    #
+#                                                                                                  #
+####################################################################################################","throwable":""}
+{"timestamp":"2025-11-28T09:26:47,227","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"Besu","message":"Connecting to 8 static nodes.","throwable":""}
+{"timestamp":"2025-11-28T09:26:47,227","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"Besu","message":"Security Module: localfile","throwable":""}
+{"timestamp":"2025-11-28T09:26:47,260","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"Besu","message":"Using the native implementation of alt bn128","throwable":""}
+{"timestamp":"2025-11-28T09:26:47,524","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"Besu","message":"Using the native implementation of modexp","throwable":""}
+{"timestamp":"2025-11-28T09:26:47,524","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"Besu","message":"Using the native implementation of the signature algorithm","throwable":""}
+{"timestamp":"2025-11-28T09:26:47,557","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"Besu","message":"Using the native implementation of the blake2bf algorithm","throwable":""}
+{"timestamp":"2025-11-28T09:26:47,640","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"RocksDBKeyValueStorageFactory","message":"No existing database detected at /opt/besu/data. Using version 1","throwable":""}
+{"timestamp":"2025-11-28T09:26:49,443","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"KeyPairUtil","message":"Loaded public key 0xaf19c92deb635bd7720634de9b2e7908208530d6f5e96eee003a8f1799e5be4037957d7e2fdbe3605e3a38dab05c961679c02133a0e624e23a72f7961e8af6ac from /opt/besu/keys/nodekey","throwable":""}
+{"timestamp":"2025-11-28T09:26:49,461","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"RocksDBKeyValuePrivacyStorageFactory","message":"No existing private database detected at /opt/besu/data. Using version 1","throwable":""}
+{"timestamp":"2025-11-28T09:26:50,248","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"ProtocolScheduleBuilder","message":"Protocol schedule created with milestones: [GrayGlacier: 0]","throwable":""}
+{"timestamp":"2025-11-28T09:26:51,366","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"TransactionPoolFactory","message":"Enabling transaction pool","throwable":""}
+{"timestamp":"2025-11-28T09:26:51,412","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"BesuControllerBuilder","message":"TTD difficulty is not present, creating initial sync phase for PoW","throwable":""}
+{"timestamp":"2025-11-28T09:26:51,891","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"RunnerBuilder","message":"Detecting NAT service.","throwable":""}
+{"timestamp":"2025-11-28T09:26:52,795","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"Runner","message":"Starting external services ... ","throwable":""}
+{"timestamp":"2025-11-28T09:26:52,796","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"MetricsHttpService","message":"Starting metrics http service on 0.0.0.0:9545","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,294","container":"2d76d43eb3e3","level":"INFO","thread":"vert.x-eventloop-thread-2","class":"MetricsHttpService","message":"Metrics service started and listening on 0.0.0.0:9545","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,294","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"JsonRpcHttpService","message":"Starting JSON-RPC service on 0.0.0.0:8545","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,345","container":"2d76d43eb3e3","level":"INFO","thread":"vert.x-eventloop-thread-2","class":"JsonRpcHttpService","message":"JSON-RPC service started and listening on 0.0.0.0:8545","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,347","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"GraphQLHttpService","message":"Starting GraphQL HTTP service on 0.0.0.0:8547","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,359","container":"2d76d43eb3e3","level":"INFO","thread":"vert.x-eventloop-thread-2","class":"GraphQLHttpService","message":"GraphQL HTTP service started and listening on 0.0.0.0:8547","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,361","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"WebSocketService","message":"Starting Websocket service on 0.0.0.0:8546","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,378","container":"2d76d43eb3e3","level":"INFO","thread":"vert.x-eventloop-thread-2","class":"WebSocketService","message":"Websocket service started and listening on 0.0.0.0:8546","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,382","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"AutoTransactionLogBloomCachingService","message":"Starting auto transaction log bloom caching service.","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,383","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"LogBloomCacheMetadata","message":"Lookup cache metadata file in data directory: /opt/besu/data/caches","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,416","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"Runner","message":"Starting Ethereum main loop ... ","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,417","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"NatService","message":"No NAT environment detected so no service could be started","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,417","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"NetworkRunner","message":"Starting Network.","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,437","container":"2d76d43eb3e3","level":"INFO","thread":"nioEventLoopGroup-2-1","class":"RlpxAgent","message":"P2P RLPx agent started and listening on /[0:0:0:0:0:0:0:0]:30303.","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,438","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"PeerDiscoveryAgent","message":"Starting peer discovery agent on host=0.0.0.0, port=30303","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,546","container":"2d76d43eb3e3","level":"INFO","thread":"vert.x-eventloop-thread-2","class":"VertxPeerDiscoveryAgent","message":"Started peer discovery agent successfully, on effective host=0:0:0:0:0:0:0:0%0 and port=30303","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,559","container":"2d76d43eb3e3","level":"INFO","thread":"vert.x-eventloop-thread-2","class":"PeerDiscoveryAgent","message":"P2P peer discovery agent started and listening on /[0:0:0:0:0:0:0:0%0]:30303","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,729","container":"2d76d43eb3e3","level":"INFO","thread":"vert.x-eventloop-thread-2","class":"PeerDiscoveryAgent","message":"Writing node record to disk. NodeRecord{seq=1, publicKey=0x02af19c92deb635bd7720634de9b2e7908208530d6f5e96eee003a8f1799e5be40, udpAddress=Optional[/172.16.239.18:30303], tcpAddress=Optional[/172.16.239.18:30303], asBase64=-Je4QL1HgKu1E-60dkIFeLOOS5pBYhuMEBbDWEbgrpU-R5ciESOa84QMPWGGEYh3xRPyHPDZbC4InZVYVReUsn3TWDwBg2V0aMfGhMw13_-AgmlkgnY0gmlwhKwQ7xKJc2VjcDI1NmsxoQKvGckt62Nb13IGNN6bLnkIIIUw1vXpbu4AOo8XmeW-QIN0Y3CCdl-DdWRwgnZf, nodeId=0x7bdd9cf0154c19f388ab92cf401bdfcd9221cd790e7cd66eece303ed4d4b53b1, customFields={tcp=30303, udp=30303, ip=0xac10ef12, eth=[[0xcc35dfff, 0x]], id=V4, secp256k1=0x02af19c92deb635bd7720634de9b2e7908208530d6f5e96eee003a8f1799e5be40}}","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,849","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"DefaultP2PNetwork","message":"Enode URL enode://af19c92deb635bd7720634de9b2e7908208530d6f5e96eee003a8f1799e5be4037957d7e2fdbe3605e3a38dab05c961679c02133a0e624e23a72f7961e8af6ac@172.16.239.18:30303","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,850","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"DefaultP2PNetwork","message":"Node address 0x401bdfcd9221cd790e7cd66eece303ed4d4b53b1","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,982","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"NetworkRunner","message":"Supported capabilities: [eth/62, eth/63, eth/64, eth/65, eth/66, eth/67, eth/68], [istanbul/100], [snap/1]","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,983","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"DefaultSynchronizer","message":"Starting synchronizer.","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,990","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"TransactionPoolFactory","message":"Enabling transaction handling following initial sync","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,994","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"FullSyncDownloader","message":"Starting full sync.","throwable":""}
+{"timestamp":"2025-11-28T09:26:53,994","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"FullSyncTargetManager","message":"Unable to find sync target. Currently checking 0 peers for usefulness","throwable":""}
+{"timestamp":"2025-11-28T09:26:54,051","container":"2d76d43eb3e3","level":"INFO","thread":"main","class":"Runner","message":"Ethereum main loop is up.","throwable":""}
+{"timestamp":"2025-11-28T09:26:54,343","container":"2d76d43eb3e3","level":"INFO","thread":"nioEventLoopGroup-3-4","class":"FullSyncTargetManager","message":"Unable to find sync target. Currently checking 7 peers for usefulness","throwable":""}
+{"timestamp":"2025-11-28T09:26:54,449","container":"2d76d43eb3e3","level":"INFO","thread":"EthScheduler-Workers-0","class":"PersistBlockTask","message":"Imported #1 / 0 tx / 0 om / 0 (0.0%) gas / (0xf8a88821feaefe147596d26e5a737d63560f5d67843efce83a5940df53f89419) in 0.069s. Peers: 7","throwable":""}
+{"timestamp":"2025-11-28T09:26:58,455","container":"2d76d43eb3e3","level":"INFO","thread":"BftProcessorExecutor-QBFT-0","class":"BftProcessor","message":"Shutting down BFT event processor","throwable":""}
+{"timestamp":"2025-11-28T09:26:58,458","container":"2d76d43eb3e3","level":"INFO","thread":"BesuCommand-Shutdown-Hook","class":"DefaultSynchronizer","message":"Stopping synchronizer","throwable":""}
+{"timestamp":"2025-11-28T09:26:58,466","container":"2d76d43eb3e3","level":"INFO","thread":"BesuCommand-Shutdown-Hook","class":"NetworkRunner","message":"Stopping Network.","throwable":""}
+{"timestamp":"2025-11-28T09:26:58,492","container":"2d76d43eb3e3","level":"INFO","thread":"BesuCommand-Shutdown-Hook","class":"EthProtocolManager","message":"Stopping eth Subprotocol.","throwable":""}
+{"timestamp":"2025-11-28T09:26:58,592","container":"2d76d43eb3e3","level":"INFO","thread":"BesuCommand-Shutdown-Hook","class":"EthProtocolManager","message":"eth Subprotocol stopped.","throwable":""}
+{"timestamp":"2025-11-28T09:26:58,592","container":"2d76d43eb3e3","level":"INFO","thread":"BesuCommand-Shutdown-Hook","class":"NetworkRunner","message":"Network stopped.","throwable":""}
+{"timestamp":"2025-11-28T09:26:58,593","container":"2d76d43eb3e3","level":"INFO","thread":"BesuCommand-Shutdown-Hook","class":"AutoTransactionLogBloomCachingService","message":"Shutting down Auto transaction logs caching service.","throwable":""}
+{"timestamp":"2025-11-28T09:26:58,594","container":"2d76d43eb3e3","level":"INFO","thread":"BesuCommand-Shutdown-Hook","class":"NatService","message":"No NAT environment detected so no service could be stopped","throwable":""}

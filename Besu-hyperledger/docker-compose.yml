@@ -182,80 +182,80 @@ x-ethsignerProxy-def:
 
 services:
 
-  validator1:
+  sbv:
     << : *besu-def
     ports:
       - 21001:8545/tcp
       - 30303
       - 9545
     environment:
-      - OTEL_RESOURCE_ATTRIBUTES=service.name=validator1,service.version=${BESU_VERSION:-latest}
+      - OTEL_RESOURCE_ATTRIBUTES=service.name=sbv,service.version=${BESU_VERSION:-latest}
     labels:
       - "consensus=besu"
     volumes:
       - ./config/besu/:/config
-      - ./config/nodes/validator1:/opt/besu/keys
+      - ./config/nodes/sbv:/opt/besu/keys
       - ./logs/besu:/tmp/besu
     networks:
       quorum-dev-quickstart:
         ipv4_address: 172.16.239.11
 
-  validator2:
+  vietcombank:
     << : *besu-def
     ports:
       - 21002:8545/tcp
       - 30303
       - 9545
     environment:
-      - OTEL_RESOURCE_ATTRIBUTES=service.name=validator2,service.version=${BESU_VERSION:-latest}
+      - OTEL_RESOURCE_ATTRIBUTES=service.name=vietcombank,service.version=${BESU_VERSION:-latest}
     labels:
       - "consensus=besu"
     volumes:
       - ./config/besu/:/config
-      - ./config/nodes/validator2:/opt/besu/keys
+      - ./config/nodes/vietcombank:/opt/besu/keys
       - ./logs/besu:/tmp/besu
     depends_on:
-      - validator1
+      - sbv
     networks:
       quorum-dev-quickstart:
         ipv4_address: 172.16.239.12
 
-  validator3:
+  vietinbank:
     << : *besu-def
     ports:
       - 21003:8545/tcp
       - 30303
       - 9545
     environment:
-      - OTEL_RESOURCE_ATTRIBUTES=service.name=validator3,service.version=${BESU_VERSION:-latest}
+      - OTEL_RESOURCE_ATTRIBUTES=service.name=vietinbank,service.version=${BESU_VERSION:-latest}
     labels:
       - "consensus=besu"
     volumes:
       - ./config/besu/:/config
-      - ./config/nodes/validator3:/opt/besu/keys
+      - ./config/nodes/vietinbank:/opt/besu/keys
       - ./logs/besu:/tmp/besu
     depends_on:
-      - validator1
+      - sbv
     networks:
       quorum-dev-quickstart:
         ipv4_address: 172.16.239.13
 
-  validator4:
+  bidv:
     << : *besu-def
     ports:
       - 21004:8545/tcp
       - 30303
       - 9545
     environment:
-      - OTEL_RESOURCE_ATTRIBUTES=service.name=validator4,service.version=${BESU_VERSION:-latest}
+      - OTEL_RESOURCE_ATTRIBUTES=service.name=bidv,service.version=${BESU_VERSION:-latest}
     labels:
       - "consensus=besu"
     volumes:
       - ./config/besu/:/config
-      - ./config/nodes/validator4:/opt/besu/keys
+      - ./config/nodes/bidv:/opt/besu/keys
       - ./logs/besu:/tmp/besu
     depends_on:
-      - validator1
+      - sbv
     networks:
       quorum-dev-quickstart:
         ipv4_address: 172.16.239.14
@@ -270,7 +270,7 @@ services:
       - ./config/nodes/rpcnode:/opt/besu/keys
       - ./logs/besu:/tmp/besu
     depends_on:
-      - validator1
+      - sbv
     ports:
       - 8545:8545/tcp
       - 8546:8546/tcp
@@ -284,7 +284,7 @@ services:
       - ./config/ethsigner/password:/opt/ethsigner/passwordfile
       - ./config/ethsigner/key:/opt/ethsigner/keyfile
     depends_on:
-      - validator1
+      - sbv
       - rpcnode
     ports:
       - 18545:8545/tcp
@@ -327,7 +327,7 @@ services:
       - ./config/nodes/member1:/opt/besu/keys
       - ./logs/besu:/tmp/besu
     depends_on:
-      - validator1
+      - sbv
       - member1tessera
     ports:
       - 20000:8545/tcp
@@ -370,7 +370,7 @@ services:
       - ./config/nodes/member2:/opt/besu/keys
       - ./logs/besu:/tmp/besu
     depends_on:
-      - validator1
+      - sbv
       - member2tessera
     ports:
       - 20002:8545/tcp
@@ -413,7 +413,7 @@ services:
       - ./config/nodes/member3:/opt/besu/keys
       - ./logs/besu:/tmp/besu
     depends_on:
-      - validator1
+      - sbv
       - member3tessera
     ports:
       - 20004:8545/tcp
