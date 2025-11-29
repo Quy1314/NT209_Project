@@ -39,8 +39,9 @@ Tài liệu tham khảo và tài liệu gốc:
 ## 🔍 Tìm kiếm nhanh
 
 ### Hướng dẫn sử dụng
-- [Mock Mode](./guides/QUICK_GUIDE_MOCK_MODE.md) - Bật/tắt mock transactions
+- **[Runbook](./guides/RUNBOOK.md)** - ⭐ **Hướng dẫn chạy hệ thống từ đầu** (Blockchain → Deploy → Web)
 - [Reset Blockchain](./guides/QUICK_RESET_GUIDE.md) - Reset blockchain nhanh
+- [Mock Mode](./guides/QUICK_GUIDE_MOCK_MODE.md) - Bật/tắt mock transactions
 - [Sync Transactions](./guides/SYNC_TRANSACTIONS_GUIDE.md) - Đồng bộ transactions
 
 ### Kiến trúc hệ thống
