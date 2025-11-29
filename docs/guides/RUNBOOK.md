@@ -129,7 +129,7 @@ cd smart_contracts
 ### 3.2. Cài đặt dependencies (nếu chưa có)
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
 ### 3.3. Compile Smart Contract
@@ -248,7 +248,7 @@ cd GUI/web
 ### 4.2. Cài đặt dependencies (nếu chưa có)
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
 ### 4.3. Kiểm tra cấu hình
@@ -392,12 +392,12 @@ curl -X POST http://localhost:21001 \
 
 # 2. Deploy contract
 cd smart_contracts
-npm install  # Chỉ cần chạy 1 lần
+npm install --legacy-peer-deps  # Chỉ cần chạy 1 lần
 node scripts/public/deploy_and_init.js
 
 # 3. Chạy web GUI
 cd ../../GUI/web
-npm install  # Chỉ cần chạy 1 lần
+npm install --legacy-peer-deps  # Chỉ cần chạy 1 lần
 npm run dev
 
 # 4. Mở browser: http://localhost:3000
